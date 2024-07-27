@@ -84,7 +84,7 @@ export const projects = [
         des: "This repository contains a two-player Tic Tac Toe game built using HTML, CSS, and JavaScript. The game features background music and a cute gif that appears after winning. Simple to play and enjoyable in the browser, challenge your friends to a game of Tic Tac Toe and see who comes out on top!",
         img: "/p2.webp",
         iconLists: ["/html.svg", "/css.svg", "/js.svg"],
-        link: "https://tic-tac-toe-game-hm.vercel.app/",
+        link: "https://tic-tac-toe-game-hm.vercel.app",
     },
     {
         id: 3,
@@ -94,14 +94,14 @@ export const projects = [
         iconLists: ["/html.svg", "/css.svg", "/js.svg"],
         link: "https://hackers-terminal-hm.vercel.app",
     },
-    {
-        id: 4,
-        title: "Coming Soon",
-        des: "Work in progress...",
-        img: "/p4.webp",
-        iconLists: ["/html.svg", "/css.svg", "/js.svg"],
-        link: "https://github.com/HackesticMedusa",
-    },
+    // {
+    //     id: 4,
+    //     title: "Coming Soon",
+    //     des: "Work in progress...",
+    //     img: "/p4.webp",
+    //     iconLists: ["/html.svg", "/css.svg", "/js.svg"],
+    //     link: "https://github.com/HackesticMedusa",
+    // },
 ];
 
 export const testimonials = [
