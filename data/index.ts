@@ -1,7 +1,6 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
     { name: "Contact", link: "#contact" },
 ];
 
@@ -75,7 +74,7 @@ export const projects = [
         title: "Netflix Clone",
         des: "A simple, visual replica of the Netflix homepage, created for educational purposes. Features include a hero section, device-specific sections, a kids’ profile creation section, a FAQ section, and a footer.",
         img: "/p1.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+        iconLists: ["/html.svg", "/css.svg"],
         link: "https://netflix-clone-hm.vercel.app",
     },
     {
@@ -83,7 +82,7 @@ export const projects = [
         title: "Tic Tac Toe game",
         des: "This repository contains a two-player Tic Tac Toe game built using HTML, CSS, and JavaScript. The game features background music and a cute gif that appears after winning. Simple to play and enjoyable in the browser, challenge your friends to a game of Tic Tac Toe and see who comes out on top!",
         img: "/p2.svg",
-        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+        iconLists: ["/html.svg", "/css.svg", "/js.svg"],
         link: "https://tic-tac-toe-game-hm.vercel.app/",
     },
     {
@@ -91,7 +90,7 @@ export const projects = [
         title: "Hacker's Terminal",
         des: "Hacker's Terminal is a fun and interactive web application that simulates a hacking terminal. It displays a series of messages with a blinking cursor to mimic a real hacking experience.",
         img: "/p3.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+        iconLists: ["/html.svg", "/css.svg", "/js.svg"],
         link: "https://hackers-terminal-hm.vercel.app",
     },
     {
@@ -99,7 +98,7 @@ export const projects = [
         title: "Coming Soon",
         des: "Work in progress...",
         img: "/p4.svg",
-        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+        iconLists: ["/html.svg", "/css.svg", "/js.svg"],
         link: "https://github.com/HackesticMedusa",
     },
 ];
