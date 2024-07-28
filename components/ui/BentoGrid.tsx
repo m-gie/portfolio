@@ -51,6 +51,7 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const [copied, setCopied] = useState(false)
+  const [animationKey, setAnimationKey] = useState(0);
   const handleCopy = () => {
     navigator.clipboard.writeText('ankurkarmakar247@gmail.com');
     setCopied(true);
@@ -59,10 +60,11 @@ export const BentoGridItem = ({
     if (copied) {
       const timer = setTimeout(() => {
         setCopied(false);
-      }, 2000);
+        setAnimationKey(prevKey => prevKey + 1); // Restart the animation
+      }, 1500);
       return () => clearTimeout(timer);
     }
-  }, [copied]);
+  }, [copied]);  
   return (
     <div
       className={cn(
@@ -133,7 +135,7 @@ export const BentoGridItem = ({
           {id === 6 && (
             <div className="mt-5 relative">
               <div className={`absolute -bottom-5 right-0`}>
-                <Lottie options={{
+                <Lottie key={animationKey} options={{
                   loop: copied,
                   autoplay: copied,
                   animationData,
