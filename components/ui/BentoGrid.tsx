@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import animationData from '@/data/confetti.json';
 import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
@@ -54,7 +54,15 @@ export const BentoGridItem = ({
   const handleCopy = () => {
     navigator.clipboard.writeText('ankurkarmakar247@gmail.com');
     setCopied(true);
-  }
+  };
+  useEffect(() => {
+    if (copied) {
+      const timer = setTimeout(() => {
+        setCopied(false);
+      }, 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [copied]);
   return (
     <div
       className={cn(
