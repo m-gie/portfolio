@@ -119,17 +119,21 @@ export const socialMedia = [
     {
         id: 1,
         img: "/git.svg",
+        link: "github/HackesticMedusa",
     },
     {
         id: 2,
-        img: "/twit.svg",
+        img: "/link.svg",
+        link: "linkedin.com/in/hackesticmedusa",
     },
     {
         id: 3,
-        img: "/link.svg",
+        img: "/insta.svg",
+        link: "instagram.com/hackesticmedusa",
     },
     {
         id: 4,
-        img: "/insta.svg",
+        img: "/twit.svg",
+        link: "twitter.com/HackesticMedusa",
     },
 ];
